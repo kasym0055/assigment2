@@ -4,6 +4,7 @@ public class Person {
     private static int id_gen;
     public String name;
     public String surname;
+    public String position;
 
     public Person() {}
 
@@ -35,8 +36,14 @@ public class Person {
         this.surname = surname;
     }
 
+    public static String getPosition(String part){
+        return part;
+    }
+    public void setPosition(String position){
+        this.position = position;
+    }
 
-
+    @Override
     public String toString(){
         return id_gen + ". " + name + " " + surname;
     }

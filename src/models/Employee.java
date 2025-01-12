@@ -2,7 +2,6 @@ package models;
 
 public class Employee extends Person {
     public double salary;
-
     public Employee() {}
 
     public Employee( String name, String surname,double salary) {

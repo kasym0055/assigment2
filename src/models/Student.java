@@ -2,7 +2,6 @@ package models;
 
 public class Student extends Person {
     public double gpa;
-    public double stipend=0;
 
     public Student() {}
     public Student(String name,String surname, double gpa) {
@@ -19,7 +18,7 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return getId_gen()+","+getName()+","+getSurname()+","+getGpa()+","+getPaymentAmount(gpa);
+        return "Student: "+getId_gen()+". "+getName()+" "+getSurname()+" "+getPaymentAmount(gpa);
     }
 
     public double getPaymentAmount(double gpa) {
